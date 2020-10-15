@@ -1,0 +1,30 @@
+{
+    "name": "byrnes2014\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "byrnes2014",
+            "email": "76119622@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Byrnes2014\\Weather\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "mockery/mockery": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Byrnes2014\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
