@@ -58,4 +58,18 @@ class Weather
         }
 
 	}
+
+    // 获取实时天气
+    public function getLiveWeather($city, $format = 'json') 
+    {
+        return $this->getWeather($city, 'base', $format);
+    }
+
+
+    // 获取天气预报
+    public function getForecastsWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'all', $format);
+    }
+
 }
